@@ -35,7 +35,7 @@ const testimonials = [
 const TestimonialSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => 

@@ -54,7 +54,7 @@ const services = [
 
 const ServiceCard = ({ service, index }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
   const animation = useAnimation();
 
   useEffect(() => {
@@ -97,7 +97,7 @@ const ServiceCard = ({ service, index }) => {
 
 const ServicesSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
   const animation = useAnimation();
 
   useEffect(() => {
